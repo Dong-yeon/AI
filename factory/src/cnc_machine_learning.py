@@ -10,15 +10,14 @@ import tensorflow as tf
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.metrics import confusion_matrix # Add this import
 
-# 수정된 코드
 from tensorflow.keras.models import Model, Sequential
-from tensorflow.keras.layers import Layer # InputSpec은 Layer에서 상속받거나 다른 방식으로 사용될 수 있습니다. 필요시 확인 필요.
+from tensorflow.keras.layers import Layer
 from tensorflow.keras.optimizers import Adam, RMSprop, SGD
 from tensorflow.keras import initializers, regularizers, constraints
 from tensorflow.keras.callbacks import ModelCheckpoint, LearningRateScheduler, History
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Input
 from tensorflow.keras import backend as K
-from tensorflow.keras.utils import to_categorical # np_utils 대신 to_categorical 사용 권장 (사용 여부 확인 필요)
+from tensorflow.keras.utils import to_categorical 
 
 from sklearn.model_selection import train_test_split
 
